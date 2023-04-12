@@ -16,6 +16,7 @@
     background-image: url(images/bg-main-mobile.png);
     height: 35vh;
     margin-bottom: 60px;
+    
 }
 .cardback{
     width: 80%;
@@ -25,6 +26,7 @@
 }
 .cardfront{
     width: 80%;
+    
     position: relative;
     left: 10px;
     bottom: 60px;
@@ -65,9 +67,57 @@ button{
     color: white;
     font-size: ;
 }
-/* .colors{
+@media screen and (min-width:420px){
+    .topCard{
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
- violet: hsl(270, 3%, 87%);
-color: hsl(279, 6%, 55%);
-
-} */
+        height: 40vh;
+        margin-bottom: 100px;
+        
+    }
+}
+@media screen and (min-width:520px){
+    .topCard{
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin-bottom: 50px;
+        
+    }
+}
+@media screen and (min-width:720px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .topCard{
+        width: 30%;
+        height: 100vh;
+        padding-top: 80px;
+        
+    }
+    .details{
+        width:40%;
+        height: 100vh;
+        margin-left: 300px;
+        padding-top: 100px;
+    }
+    .cardback{
+        width: 100%;
+        position: relative;
+        left: 100px;
+        
+    }
+    .cardfront{
+        width: 100%;
+        position: relative;
+        left: 200px;
+        top: 40px;
+       
+    
+    }
+}
