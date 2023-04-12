@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Space Grotesk', sans-serif ;
+    font-size: 18px;
+}
+.container{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.topCard{
+    background-image: url(images/bg-main-mobile.png);
+    height: 35vh;
+    margin-bottom: 60px;
+}
+.cardback{
+    width: 80%;
+    position: relative;
+    left:65px;
+    top:20px;
+}
+.cardfront{
+    width: 80%;
+    position: relative;
+    left: 10px;
+    bottom: 60px;
+
+}
+.details{
+    width: 90%;
+    height: 65vh;
+    padding: 10px;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    
+}
+.expiry{
+    display: block;
+    margin-bottom: 10px;
+}
+.datei{
+    display: inline-block;
+    width: 17%;
+    margin: 3px;
+}
+.cvc{
+    display: inline;
+    width: 56%;
+    margin: 3px;
+}
+button{
+    margin-top: 20px;
+    padding: 5% 42%;
+    border-radius: 10px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: ;
+}
+/* .colors{
+
+ violet: hsl(270, 3%, 87%);
+color: hsl(279, 6%, 55%);
+
+} */

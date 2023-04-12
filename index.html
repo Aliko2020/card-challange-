@@ -7,16 +7,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="topCard">
+      <img class="cardback" src="images/bg-card-back.png" alt="card-back">
+      <img class="cardfront" src="images/bg-card-front.png" alt="card-front">
 
     </div>
     <div class="details">
@@ -24,11 +21,10 @@
       <input type="text" placeholder="e.g Jane Applessed">
       <label for="number">CARD NUMBER</label>
       <input type="text" name="" placeholder="e.g 1234 5678 9123 0000">
-      <label for="exp-date">EXP. DATE(MM/YY)</label>
-      <input type="text" placeholder="MM">
-      <input type="text" placeholder="MM">
-      <label for="cvc">CVC</label>
-      <input type="text" placeholder="e.g 123">
+      <label for="exp-date" class="expiry">EXP. DATE(MM/YY) CVC</label>
+      <input class="datei" type="text" placeholder="MM">
+      <input class="datei" type="text" placeholder="YY">
+      <input class="cvc" type="text" placeholder="e.g 123">
       <button class="comfirm">Confirm</button>
     </div>
 
@@ -55,15 +51,10 @@
 
   Confirm
 
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
