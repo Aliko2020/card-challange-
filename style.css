@@ -11,25 +11,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  max-width: 800px;
+  
 }
 .topCard{
     background-image: url(images/bg-main-mobile.png);
-    height: 35vh;
-    margin-bottom: 60px;
+    height: 30vh;
+    
     
 }
 .cardback{
     width: 80%;
     position: relative;
-    left:65px;
-    top:20px;
+    left:15%;
+    top:10%;
 }
 .cardfront{
     width: 80%;
-    
     position: relative;
-    left: 10px;
-    bottom: 60px;
+    left: 5%;
+    bottom: 11%;
+    
 
 }
 .details{
@@ -56,27 +58,39 @@ input{
 }
 .cvc{
     display: inline;
-    width: 56%;
+    width: 60%;
     margin: 3px;
 }
 button{
-    margin-top: 20px;
-    padding: 5% 42%;
+    margin-top: 30px;
+    padding: 5% 39%;
     border-radius: 10px;
     background-color: hsl(278, 68%, 11%);
     color: white;
-    font-size: ;
+    
 }
-@media screen and (min-width:420px){
+@media screen and (min-width:375px){
     .topCard{
         background-image: url(images/bg-main-mobile.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
-        height: 40vh;
-        margin-bottom: 100px;
+        height: 35vh;
+        margin-bottom: 60px;
+       
         
+    }
+    .cardback{
+        top: 24%;
+    }
+    .cardfront{
+        bottom: 0;
+    }
+    .cvc{
+        width: 57%;
+    }
+    input{
+        margin: 20px 0 20px 0;   
     }
 }
 @media screen and (min-width:520px){
@@ -88,36 +102,50 @@ button{
         
     }
 }
-@media screen and (min-width:720px){
+@media screen and (min-width:700px){
+    .topCard{
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin-bottom: 130px;
+        
+    }
+    .cvc{
+        width: 61.5%;
+    }
+    button{
+        padding: 5% 44%;
+    }
+}
+@media screen and (min-width:1220px){
     .container{
+        width: 100%;
         display: flex;
         flex-direction: row;
+        max-width: 1440px;
         
     }
     .topCard{
-        width: 30%;
+        width: 45%;
         height: 100vh;
-        padding-top: 80px;
-        
+        margin-right: 200px;
     }
     .details{
-        width:40%;
-        height: 100vh;
-        margin-left: 300px;
-        padding-top: 100px;
+        width: 35%;
+        margin-left: 80px;
     }
     .cardback{
-        width: 100%;
-        position: relative;
-        left: 100px;
-        
+        top:550px;
+        left: 300px;
     }
-    .cardfront{
-        width: 100%;
-        position: relative;
-        left: 200px;
-        top: 40px;
-       
-    
-    }
+   .cardfront{
+    bottom:80px;
+    left: 220px;
+   }
+   .cvc{
+    width: 60.2%;
+   }
+   button{
+    padding: 5% 43%;
+   }
 }
